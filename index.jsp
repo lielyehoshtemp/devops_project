@@ -3,7 +3,7 @@
   <title>Book Query</title>
 </head>
 <body>
-  <h1>Another E-Bookstore</h1>
+  <h1>Another E-Bosssokstore</h1>
   <h3>Choose Author(s):</h3>
   <form method="get">
     <input type="checkbox" name="author" value="Tan Ah Teck">Tan
