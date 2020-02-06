@@ -6,7 +6,7 @@
   <h1>Another E-Bosssokstore</h1>
   <h3>Choose Author(s):</h3>
   <form method="get">
-    <input type="checkbox" name="author" value="Tan Ah Teck">Tan
+    <input type="checkbox" name="author" value="Tan Ah Teck">Tania
     <input type="checkbox" name="author" value="Mohd Ali">Ali
     <input type="checkbox" name="author" value="Kumar">Kumar
     <input type="submit" value="Query">
@@ -39,7 +39,7 @@
       <form method="get" action="order.jsp">
         <table border=1 cellpadding=5>
           <tr>
-            <th>Order</th>
+            <th>Order Tania</th>
             <th>Author</th>
             <th>Title</th>
             <th>Price</th>
