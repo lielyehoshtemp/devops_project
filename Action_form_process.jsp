@@ -56,46 +56,35 @@
 
    <ul>
       <li>
-         <button onclick="document.getElementById('projectFiles').style.display='block'">Show The JSP files</button>
+         <button onclick="projectFilesRowClicked()">Show The JSP files</button>
          <div id="projectFiles" style="display:none">
             <p>Pictures of the project files</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/Picture1.jpg">
-            <button onclick="document.getElementById('projectFiles').style.display='none'">Close The JSP files</button>
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('githubRepo').style.display='block'">Show The github
-            repository</button>
+         <button onclick="githubRepoRowClicked()">Show The github repository</button>
          <div id="githubRepo" style="display:none">
             <p>Pictures Of the project repository on github</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/github_project.png">
-            <button onclick="document.getElementById('githubRepo').style.display='none'">Close The github
-               repository</button>
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('tomcatURL').style.display='block'">Show the app running on
-            tomcat</button>
+         <button onclick="tomcatURLRowClicked()">Show the app running on tomcat</button>
          <div id="tomcatURL" style="display:none">
             <p>Picture Of the Tomcat URL in the browser</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/AppOnTomcatURL.png">
-            <button onclick="document.getElementById('tomcatURL').style.display='none'">Close the app running on
-               tomcat</button>
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('SiteMonitoring').style.display='block'">Show the SiteMonitoring
-            results</button>
+         <button onclick="SiteMonitoring">Show the SiteMonitoring results</button>
          <div id="SiteMonitoring" style="display:none">
             <p>Picture of the SiteMonitoring results</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/SiteMonitoringCheck.png">
-            <button onclick="document.getElementById('SiteMonitoring').style.display='none'">Close SiteMonitoring
-               results</button>
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('PingByJenkins').style.display='block'">Show the Ping monitor via
-            jenkins process</button>
+         <button onclick="PingByJenkinsRowClicked()">Show the Ping monitor via jenkins process</button>
          <div id="PingByJenkins" style="display:none">
             <p>Picture of the Ping command via jenkins results</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/PingByJenkins1.png">
@@ -106,18 +95,16 @@
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('seleniumTask').style.display='block'">Show Selenium Task Process
+         <button onclick="seleniumTaskRowClicked()">Show Selenium Task Process
             images</button>
          <div id="seleniumTask" style="display:none">
             <p>Picture of the Selenium process results</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/SeleniumTasks.png">
             <img src="https://storage.googleapis.com/liel-bucket/devops/SeleniumResults.png">
-            <button onclick="document.getElementById('seleniumTask').style.display='none'">Close Selenium Task Process
-               images</button>
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('loadTestTask').style.display='block'">Show Load Test Task Process
+         <button onclick="loadTestTaskRowClicked()">Show Load Test Task Process
             images</button>
          <div id="loadTestTask" style="display:none">
             <a
@@ -134,8 +121,6 @@
             <a href="https://storage.googleapis.com/liel-bucket/devops/LoadTestWhileTesting.png">
                <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestWhileTesting.png">
             </a>
-            <button onclick="document.getElementById('loadTestTask').style.display='none'">Close Load Test Task
-               images</button>
          </div>
       </li>
       <li>
@@ -145,8 +130,6 @@
             <a href="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
                <img src="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
             </a>
-            <!-- <button onclick="document.getElementById('jenkinsJobs').style.display='none'">Close the Jenkins
-               jobs</button> -->
          </div>
       </li>
    </ul>
@@ -154,6 +137,84 @@
 
    <script>
       var jenkinsJobsRowFlag = false;
+      var loadTestTaskRowFlag = false;
+      var seleniumTaskRowFlag = false;
+      var PingByJenkinsRowFlag = false;
+      var SiteMonitoringRowFlag = false;
+      var tomcatURLRowFlag = false;
+      var githubRepoRowFlag = false;
+      var projectFilesRowFlag = false;
+
+
+      function seleniumTaskRowClicked() {
+         if (seleniumTaskRowFlag) {
+            seleniumTaskRowFlag = false;
+            HideRow('seleniumTask');
+         } else {
+            seleniumTaskRowFlag = true;
+            displayRow('seleniumTask');
+         }
+      }
+
+      function PingByJenkinsRowClicked() {
+         if (PingByJenkinsRowFlag) {
+            PingByJenkinsRowFlag = false;
+            HideRow('PingByJenkins');
+         } else {
+            PingByJenkinsRowFlag = true;
+            displayRow('PingByJenkins');
+         }
+      }
+
+      function SiteMonitoringRowClicked() {
+         if (SiteMonitoringRowFlag) {
+            SiteMonitoringRowFlag = false;
+            HideRow('SiteMonitoring');
+         } else {
+            SiteMonitoringRowFlag = true;
+            displayRow('SiteMonitoring');
+         }
+      }
+
+      function githubRepoRowClicked() {
+         if (githubRepoRowFlag) {
+            githubRepoRowFlag = false;
+            HideRow('githubRepo');
+         } else {
+            githubRepoRowFlag = true;
+            displayRow('githubRepo');
+         }
+      }
+
+      function tomcatURLRowClicked() {
+         if (tomcatURLRowFlag) {
+            tomcatURLRowFlag = false;
+            HideRow('tomcatURL');
+         } else {
+            tomcatURLRowFlag = true;
+            displayRow('tomcatURL');
+         }
+      }
+
+      function projectFilesRowClicked() {
+         if (projectFilesRowFlag) {
+            projectFilesRowFlag = false;
+            HideRow('projectFiles');
+         } else {
+            projectFilesRowFlag = true;
+            displayRow('projectFiles');
+         }
+      }
+
+      function loadTestTaskRowClicked() {
+         if (loadTestTaskRowFlag) {
+            loadTestTaskRowFlag = false;
+            HideRow('loadTestTask');
+         } else {
+            loadTestTaskRowFlag = true;
+            displayRow('loadTestTask');
+         }
+      }
 
       function jenkinsJobsRowClicked() {
          if (jenkinsJobsRowFlag) {
@@ -167,8 +228,8 @@
 
       function displayRow(objID) {
          document.getElementById(objID).style.display = 'block';
-      } 
-      
+      }
+
       function HideRow(objID) {
          document.getElementById(objID).style.display = 'none';
       }
