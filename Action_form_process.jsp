@@ -22,9 +22,36 @@
 
  <button onclick="document.getElementById('task1').style.display='block'">Show Task 1 screen images</button>
  <div id="task1" style="display:none">
+   <p>Pictures Of the project files</p>
     <img src="https://storage.googleapis.com/liel-bucket/devops/Picture1.jpg">
     <button onclick="document.getElementById('task1').style.display='none'">Close Task 1 images</button>
  </div>
+ 
+ <button onclick="document.getElementById('task2').style.display='block'">Show Task 2 screen images</button>
+ <div id="task2" style="display:none">
+    <p>Pictures Of the project repository on github</p>
+    <img src="https://storage.googleapis.com/liel-bucket/devops/github_project.png">
+    <button onclick="document.getElementById('task2').style.display='none'">Close Task 2 images</button>
+ </div>
+
+ <button onclick="document.getElementById('task3').style.display='block'">Show Task 3 images</button>
+ <div id="task3" style="display:none">
+    <p>Picture Of the Tomcat URL in the browser</p>
+    <img src="https://storage.googleapis.com/liel-bucket/devops/AppOnTomcatURL.png">
+    <button onclick="document.getElementById('task3').style.display='none'">Close Task 3 images</button>
+ </div>
+ 
+ <button onclick="document.getElementById('task4').style.display='block'">Show Task 4 images</button>
+ <div id="task4" style="display:none">
+    <p>Picture of the SiteMonitoring results</p>
+    <img src="https://storage.googleapis.com/liel-bucket/devops/SiteMonitoringCheck.png">
+    <p>Picture of the Ping command via jenkins results</p>
+    <img src="https://storage.googleapis.com/liel-bucket/devops/PingByJenkins1.png">
+    <img src="https://storage.googleapis.com/liel-bucket/devops/PingByJenkins2.png">
+    <img src="https://storage.googleapis.com/liel-bucket/devops/PingByJenkins3.png">
+    <button onclick="document.getElementById('task4').style.display='none'">Close Task 4 images</button>
+ </div>
+
 
 </body>
 </html>
