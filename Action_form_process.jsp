@@ -6,7 +6,7 @@
    p {
       font-weight: bold;
    }
-   .button {
+   button {
       display: inline-block;
       padding: 15px 25px;
       font-size: 24px;
@@ -21,9 +21,9 @@
       box-shadow: 0 9px #999;
     }
     
-    .button:hover {background-color: #3e8e41}
+    button:hover {background-color: #3e8e41}
     
-    .button:active {
+    button:active {
       background-color: #3e8e41;
       box-shadow: 0 5px #666;
       transform: translateY(4px);
