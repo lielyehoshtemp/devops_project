@@ -19,6 +19,7 @@
  <p><b>Your Mail is:</b>
     <%= request.getParameter("mail")%>
  </p>
+ <img src="https://storage.googleapis.com/liel-bucket/devops/Picture1.jpg">
 
 </body>
 </html>
