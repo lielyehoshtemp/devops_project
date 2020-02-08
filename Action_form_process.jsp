@@ -105,6 +105,9 @@
          <button onclick="document.getElementById('seleniumTask').style.display='block'">Show Selenium Task Process
             images</button>
          <div id="seleniumTask" style="display:none">
+            <a href="https://storage.cloud.google.com/liel-bucket/devops/SeleniumScriptWith2Tests.side">
+               Selenium Script Download (.side file)
+            </a>
             <p>Picture of the Selenium process results</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/SeleniumTasks.png">
             <img src="https://storage.googleapis.com/liel-bucket/devops/SeleniumResults.png">
