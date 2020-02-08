@@ -17,6 +17,7 @@
         Password: <input type="text" name="password" />
         <br />
         Mail: <input type="text" name="mail" />
+        <br /><br />
         <input type="submit" value="Submit" />
         <input type="button" onclick="resetForm()" value="Reset">
     </form>
