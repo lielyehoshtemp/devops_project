@@ -6,7 +6,7 @@
   <h1>Another E-Bosssokstore</h1>
   <h3>Choose Author(s):</h3>
   <form method="get">
-    <input type="checkbox" name="author" value="Tan Ah Teck">Tania
+    <input type="checkbox" name="author" value="Tan Ah Teck">Tania2
     <input type="checkbox" name="author" value="Mohd Ali">Ali
     <input type="checkbox" name="author" value="Kumar">Kumar
     <input type="submit" value="Query">
