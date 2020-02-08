@@ -1,75 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <title>Book Query</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guru Registration Form</title>
 </head>
 <body>
-  <h1>Another E-Bosssokstore</h1>
-  <h3>Choose Author(s):</h3>
-  <form method="get">
-    <input type="checkbox" name="author" value="Tan Ah Teck">Tania23
-    <input type="checkbox" name="author" value="Mohd Ali">Ali
-    <input type="checkbox" name="author" value="Kumar">Kumar
-    <input type="submit" value="Query">
-  </form>
- 
-  <%
-    String[] authors = request.getParameterValues("author");
-    if (authors != null) {
-  %>
-  <%@ page import = "java.sql.*" %>
-  <%
-      Connection conn = DriverManager.getConnection(
-          "jdbc:mysql://localhost:8888/ebookshop", "myuser", "xxxx"); // <== Check!
-      // Connection conn =
-      //    DriverManager.getConnection("jdbc:odbc:eshopODBC");  // Access
-      Statement stmt = conn.createStatement();
- 
-      String sqlStr = "SELECT * FROM books WHERE author IN (";
-      sqlStr += "'" + authors[0] + "'";  // First author
-      for (int i = 1; i < authors.length; ++i) {
-         sqlStr += ", '" + authors[i] + "'";  // Subsequent authors need a leading commas
-      }
-      sqlStr += ") AND qty > 0 ORDER BY author ASC, title ASC";
- 
-      // for debugging
-      System.out.println("Query statement is " + sqlStr);
-      ResultSet rset = stmt.executeQuery(sqlStr);
-  %>
-      <hr>
-      <form method="get" action="order.jsp">
-        <table border=1 cellpadding=5>
-          <tr>
-            <th>Order Tania</th>
-            <th>Author</th>
-            <th>Title</th>
-            <th>Price</th>
-            <th>Qty</th>
-          </tr>
-  <%
-      while (rset.next()) {
-        int id = rset.getInt("id");
-  %>
-          <tr>
-            <td><input type="checkbox" name="id" value="<%= id %>"></td>
-            <td><%= rset.getString("author") %></td>
-            <td><%= rset.getString("title") %></td>
-            <td>$<%= rset.getInt("price") %></td>
-            <td><%= rset.getInt("qty") %></td>
-          </tr>
-  <%
-      }
-  %>
-        </table>
-        <br>
-        <input type="submit" value="Order">
-        <input type="reset" value="Clear">
-      </form>
-      <a href="<%= request.getRequestURI() %>"><h3>Back</h3></a>
-  <%
-      rset.close();
-      stmt.close();
-      conn.close();
-    }
-  %>
+<h1>Guru Register Form</h1>
+<form action="guru_register" method="post">
+			<table style="with: 50%">
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="first_name" /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" name="last_name" /></td>
+				</tr>
+				<tr>
+					<td>UserName</td>
+					<td><input type="text" name="username" /></td>
+				</tr>
+					<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="address" /></td>
+				</tr>
+				<tr>
+					<td>Contact No</td>
+					<td><input type="text" name="contact" /></td>
+				</tr></table>
+			<input type="submit" value="Submit" /></form>
 </body>
 </html>
