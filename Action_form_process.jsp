@@ -16,7 +16,7 @@
       text-decoration: none;
       outline: none;
       color: #fff;
-      background-color: #4CAF50;
+      background-color: sienna;
       border: none;
       border-radius: 15px;
       box-shadow: 0 9px #999;
@@ -130,6 +130,14 @@
             <a href="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
                <img src="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
             </a>
+            <p>Job 1 - Listen To Git Updates</p>
+            <img src="https://storage.googleapis.com/liel-bucket/devops/ListenToGitChangesJob.png">
+            <p>Job 2 - Clone the repository and deploy it to the local Tomcat Server</p>
+            <img src="https://storage.googleapis.com/liel-bucket/devops/DeployToTomcatJob.png">
+            <img src="https://storage.googleapis.com/liel-bucket/devops/DeployToTomcatJobSettings1.png">
+            <img src="https://storage.googleapis.com/liel-bucket/devops/DeployToTomcatJobSettings2.png">
+            <p>Job 3 - Monitor to the web app by ping</p>
+            <img src="https://storage.googleapis.com/liel-bucket/devops/PingToIPJob.png">
          </div>
       </li>
    </ul>
