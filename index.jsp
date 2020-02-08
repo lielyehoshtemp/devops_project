@@ -5,10 +5,11 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Register</title>
+    <title>Devops Project</title>
 </head>
 
 <body>
+    <h2>Login Page</h2>
     <form action="Action_form_process.jsp" method="GET">
         UserName: <input type="text" name="username">
         <br />

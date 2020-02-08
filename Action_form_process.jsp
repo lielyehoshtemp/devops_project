@@ -13,7 +13,7 @@
 <p><b>Welcome User:</b>
    <%= request.getParameter("username")%>
 </p>
-<p><b>Welcome User:</b>
+<p><b>Your Password is:</b>
     <%= request.getParameter("password")%>
  </p>
 
