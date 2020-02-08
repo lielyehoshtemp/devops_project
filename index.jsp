@@ -10,12 +10,20 @@
 
 <body>
     <h2>Login Page</h2>
-    <form action="Action_form_process.jsp" method="GET">
+    <form id="frm1" action="Action_form_process.jsp" method="GET">
         UserName: <input type="text" name="username">
         <br />
         Password: <input type="text" name="password" />
+        <br />
+        Mail: <input type="text" name="mail" />
         <input type="submit" value="Submit" />
+        <input type="button" onclick="resetForm()" value="Reset">
     </form>
+    <script>
+        function resetForm() {
+            document.getElementById("frm1").reset();
+        }
+    </script>
 </body>
 
 </html>

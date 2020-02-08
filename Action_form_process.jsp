@@ -16,6 +16,9 @@
 <p><b>Your Password is:</b>
     <%= request.getParameter("password")%>
  </p>
+ <p><b>Your Mail is:</b>
+    <%= request.getParameter("mail")%>
+ </p>
 
 </body>
 </html>
