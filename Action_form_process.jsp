@@ -19,7 +19,12 @@
  <p><b>Your Mail is:</b>
     <%= request.getParameter("mail")%>
  </p>
- <img src="https://storage.googleapis.com/liel-bucket/devops/Picture1.jpg">
+
+ <button onclick="document.getElementById('task1').style.display='block'">Show Task 1 screen images</button>
+ <div id="task1" style="display:none">
+    <img src="https://storage.googleapis.com/liel-bucket/devops/Picture1.jpg">
+    <button onclick="document.getElementById('task1').style.display='none'">Close Task 1 images</button>
+ </div>
 
 </body>
 </html>
