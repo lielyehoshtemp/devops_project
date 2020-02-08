@@ -28,7 +28,7 @@
     <br /><br />
     <h1>Students:</h1><br />
     <p>Liel Yehoshua - 313452583</p>
-    <p>Amit Duanias - 206092496</p>
+    <p>Amit Doanias - 206092496</p>
     <script>
         function resetForm() {
             document.getElementById("frm1").reset();
