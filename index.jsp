@@ -7,7 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Devops Project</title>
 </head>
-
+<style>
+    p {
+        font-weight: bold;
+    }
+</style>
 <body>
     <h3>Devops Final Project</h3>
     <h2>Login Page</h2>
@@ -23,7 +27,7 @@
     </form>
     <br /><br />
     <h1>Students:</h1><br />
-    <p>Liel Yehoshua - 313452583</p><br />
+    <p>Liel Yehoshua - 313452583</p>
     <p>Amit Duanias - 206092496</p>
     <script>
         function resetForm() {
