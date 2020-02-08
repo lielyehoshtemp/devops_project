@@ -7,7 +7,7 @@
 <title>Guru Form</title>
 </head>
 <body>
-<form action="action_form_process.jsp" method="GET">
+<form action="Action_form_process.jsp" method="GET">
 UserName: <input type="text" name="username">
 <br />
 Password: <input type="text" name="password" />
