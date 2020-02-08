@@ -31,6 +31,7 @@
       box-shadow: 0 5px #666;
       transform: translateY(4px);
    }
+
    img {
       width: 70%;
    }
@@ -108,9 +109,6 @@
          <button onclick="document.getElementById('seleniumTask').style.display='block'">Show Selenium Task Process
             images</button>
          <div id="seleniumTask" style="display:none">
-            <a href="https://storage.cloud.google.com/liel-bucket/devops/SeleniumScriptWith2Tests.side">
-               Selenium Script Download (.side file)
-            </a>
             <p>Picture of the Selenium process results</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/SeleniumTasks.png">
             <img src="https://storage.googleapis.com/liel-bucket/devops/SeleniumResults.png">
@@ -122,30 +120,59 @@
          <button onclick="document.getElementById('loadTestTask').style.display='block'">Show Load Test Task Process
             images</button>
          <div id="loadTestTask" style="display:none">
-            <a href="https://storage.googleapis.com/liel-bucket/devops/Results(run%20%236%20of%20Final_Project_Load_Test).pdf">
+            <a
+               href="https://storage.googleapis.com/liel-bucket/devops/Results(run%20%236%20of%20Final_Project_Load_Test).pdf">
                PDF of the results
             </a>
             <p>Picture of the load test process results</p>
             <a href="https://storage.googleapis.com/liel-bucket/devops/LoadTestBeforeRunning.png">
                <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestBeforeRunning.png">
             </a>
-            <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestResults.png">
-            <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestWhileTesting.png">
+            <a href="https://storage.googleapis.com/liel-bucket/devops/LoadTestResults.png">
+               <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestResults.png">
+            </a>
+            <a href="https://storage.googleapis.com/liel-bucket/devops/LoadTestWhileTesting.png">
+               <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestWhileTesting.png">
+            </a>
             <button onclick="document.getElementById('loadTestTask').style.display='none'">Close Load Test Task
                images</button>
          </div>
       </li>
       <li>
-         <button onclick="document.getElementById('jenkinsJobs').style.display='block'">Show the Jenkins jobs</button>
+         <button onclick="jenkinsJobsRowClicked()">Show the Jenkins jobs</button>
          <div id="jenkinsJobs" style="display:none">
             <p>Jenkins Jobs</p>
-            <img src="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
-            <button onclick="document.getElementById('jenkinsJobs').style.display='none'">Close the Jenkins
-               jobs</button>
+            <a href="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
+               <img src="https://storage.googleapis.com/liel-bucket/devops/JenkinsJobs.png">
+            </a>
+            <!-- <button onclick="document.getElementById('jenkinsJobs').style.display='none'">Close the Jenkins
+               jobs</button> -->
          </div>
       </li>
    </ul>
    </div>
+
+   <script>
+      var jenkinsJobsRowFlag = false;
+
+      function jenkinsJobsRowClicked() {
+         if (jenkinsJobsRowFlag) {
+            jenkinsJobsRowFlag = false;
+            HideRow('jenkinsJobs');
+         } else {
+            jenkinsJobsRowFlag = true;
+            displayRow('jenkinsJobs');
+         }
+      }
+
+      function displayRow(objID) {
+         document.getElementById(objID).style.display = 'block';
+      } 
+      
+      function HideRow(objID) {
+         document.getElementById(objID).style.display = 'none';
+      }
+   </script>
 
 </body>
 
