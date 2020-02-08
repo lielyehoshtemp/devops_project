@@ -13,6 +13,9 @@
 <p><b>Welcome User:</b>
    <%= request.getParameter("username")%>
 </p>
- 
+<p><b>Welcome User:</b>
+    <%= request.getParameter("password")%>
+ </p>
+
 </body>
 </html>
