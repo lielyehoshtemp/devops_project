@@ -20,6 +20,7 @@
         <input type="submit" value="Submit" />
         <input type="button" onclick="resetForm()" value="Reset">
     </form>
+    <p>Liel Yehoshua & Amit Duanis</p>
     <script>
         function resetForm() {
             document.getElementById("frm1").reset();
