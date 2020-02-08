@@ -77,7 +77,7 @@
          </div>
       </li>
       <li>
-         <button onclick="SiteMonitoring">Show the SiteMonitoring results</button>
+         <button onclick="SiteMonitoringRowClicked()">Show the SiteMonitoring results</button>
          <div id="SiteMonitoring" style="display:none">
             <p>Picture of the SiteMonitoring results</p>
             <img src="https://storage.googleapis.com/liel-bucket/devops/SiteMonitoringCheck.png">
