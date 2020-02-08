@@ -31,6 +31,9 @@
       box-shadow: 0 5px #666;
       transform: translateY(4px);
    }
+   img {
+      width: 70%;
+   }
 </style>
 
 <head>
@@ -123,7 +126,9 @@
                PDF of the results
             </a>
             <p>Picture of the load test process results</p>
-            <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestBeforeRunning.png">
+            <a href="https://storage.googleapis.com/liel-bucket/devops/LoadTestBeforeRunning.png">
+               <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestBeforeRunning.png">
+            </a>
             <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestResults.png">
             <img src="https://storage.googleapis.com/liel-bucket/devops/LoadTestWhileTesting.png">
             <button onclick="document.getElementById('loadTestTask').style.display='none'">Close Load Test Task
