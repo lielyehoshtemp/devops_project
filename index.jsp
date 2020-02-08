@@ -21,7 +21,10 @@
         <input type="submit" value="Submit" />
         <input type="button" onclick="resetForm()" value="Reset">
     </form>
-    <p>Liel Yehoshua & Amit Duanis</p>
+    <br /><br />
+    <h1>Students:</h1><br />
+    <p>Liel Yehoshua - 313452583</p><br />
+    <p>Amit Duanias - 206092496</p>
     <script>
         function resetForm() {
             document.getElementById("frm1").reset();
